@@ -1,0 +1,8 @@
+faiss-cpu
+numpy
+pandas
+sentence-transformers
+torch
+transformers
+ipykernel
+jupyter
