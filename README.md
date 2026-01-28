@@ -1,59 +1,93 @@
-# Semantic RAG with Re-Ranking and Timeline Analysis
 
-A Jupyter Notebook implementation of a Retrieval-Augmented Generation (RAG) system incorporating semantic search, re-ranking, and timeline analysis.
+<div align="center">
 
-## Description
+# 🧠 Semantic RAG with Re-Ranking and Timeline Analysis
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+*A sophisticated Retrieval-Augmented Generation (RAG) system incorporating semantic search, cross-encoder re-ranking, and temporal context analysis.*
+
+</div>
+
+---
+
+## 📖 Description
 
 ![Architecture Diagram](architecture_diagram.png)
 
-This project demonstrates a RAG pipeline that goes beyond simple vector retrieval. It includes:
-- **Semantic Search**: Using vector embeddings to find relevant content.
-- **Re-Ranking**: Refining search results for better accuracy.
-- **Timeline Analysis**: Extracting and analyzing temporal information from the retrieved context.
+This project demonstrates a next-generation RAG pipeline that moves beyond simple vector retrieval. It integrates three key pillars for enhanced reasoning:
 
-The core logic is contained within the `DosOs_Final_Code.ipynb` notebook.
+-   **🔎 Semantic Search**: Leveraging high-dimensional vector embeddings to pinpoint relevant content.
+-   **📶 Re-Ranking**: Utilizing a cross-encoder to refine and prioritize the top results for maximum relevance.
+-   **⏳ Timeline Analysis**: extracting and structuring temporal information to understand the sequence of events.
 
-## Installation
+The core logic and implementation are encapsulated within the `DosOs_Final_Code.ipynb` notebook.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shreyanshxt/Semantic-RAG-With-ReRanking-Timeline-Analysis.git
-   cd Semantic-RAG-With-ReRanking-Timeline-Analysis
-   ```
+---
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🚀 Installation
 
-## Usage
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/shreyanshxt/Semantic-RAG-With-ReRanking-Timeline-Analysis.git
+    cd Semantic-RAG-With-ReRanking-Timeline-Analysis
+    ```
 
-1. Launch Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-2. Open `DosOs_Final_Code.ipynb` and run the cells.
+---
 
-## Dependencies
+## 🛠️ Usage
 
-- `faiss-cpu`
-- `numpy`
-- `pandas`
-- `sentence-transformers`
-- `torch`
-- `transformers`
+1.  **Launch Jupyter Notebook:**
+    ```bash
+    jupyter notebook
+    ```
 
-## Performance & Models
+2.  **Open & Run:**
+    Open `DosOs_Final_Code.ipynb` and execute the cells to observe the pipeline in action.
 
-### Models Used
-- **Re-Ranker**: `cross-encoder/ms-marco-MiniLM-L-6-v2`
-- **Embeddings**: `all-MiniLM-L6-v2` (Default SentenceTransformer)
+---
 
-### Dataset
-- **Train Set**: `train.csv` (80 samples)
-- **Test Set**: `test.csv`
+## 📦 Dependencies
 
-### Accuracy
-- **Final Accuracy**: **66.2%**
+The project relies on a robust stack of NLP and data libraries:
 
+| Library | Purpose |
+| :--- | :--- |
+| `transformers` | LLM and Tokenizer access |
+| `sentence-transformers` | generating semantic embeddings |
+| `faiss-cpu` | Efficient vector similarity search |
+| `torch` | Deep learning backend |
+| `pandas` | Data manipulation and analysis |
+| `numpy` | Numerical computing |
+
+---
+
+## 📊 Performance & Models
+
+### 🧠 Model Architecture
+
+| Component | Model Name | Description |
+| :--- | :--- | :--- |
+| **Re-Ranker** | `cross-encoder/ms-marco-MiniLM-L-6-v2` | Refines retrieval results for higher precision. |
+| **Embeddings** | `all-MiniLM-L6-v2` | Creates dense vector representations of text. |
+
+### 📉 Dataset & Accuracy
+
+| Metric | Value |
+| :--- | :--- |
+| **Train Set** | `train.csv` (80 samples) |
+| **Test Set** | `test.csv` |
+| **Final Accuracy** | **66.2%** |
+
+---
+
+<div align="center">
+    <p><i>Built with ❤️ for advanced RAG research.</i></p>
+</div>
