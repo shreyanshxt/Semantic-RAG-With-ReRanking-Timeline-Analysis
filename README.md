@@ -43,3 +43,17 @@ The core logic is contained within the `DosOs_Final_Code.ipynb` notebook.
 - `sentence-transformers`
 - `torch`
 - `transformers`
+
+## Performance & Models
+
+### Models Used
+- **Re-Ranker**: `cross-encoder/ms-marco-MiniLM-L-6-v2`
+- **Embeddings**: `all-MiniLM-L6-v2` (Default SentenceTransformer)
+
+### Dataset
+- **Train Set**: `train.csv` (80 samples)
+- **Test Set**: `test.csv`
+
+### Accuracy
+- **Final Accuracy**: **66.2%**
+
