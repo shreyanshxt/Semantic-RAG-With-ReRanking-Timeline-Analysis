@@ -4,6 +4,8 @@ A Jupyter Notebook implementation of a Retrieval-Augmented Generation (RAG) syst
 
 ## Description
 
+![Architecture Diagram](architecture_diagram.png)
+
 This project demonstrates a RAG pipeline that goes beyond simple vector retrieval. It includes:
 - **Semantic Search**: Using vector embeddings to find relevant content.
 - **Re-Ranking**: Refining search results for better accuracy.
